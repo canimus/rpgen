@@ -1,0 +1,96 @@
+body {
+  font-family: "Ubuntu", "Proxima Nova", "Helvetica";
+  margin: 20px auto;
+  width: 600px;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  color: #000;
+}
+
+hr {
+  margin: 0px;
+}
+
+.column {
+  float:left;
+  width: 120px;
+}
+
+.clear {
+  clear: both;
+}
+
+ul,li {
+  margin-top: 2px;
+}
+
+em {
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+p,li,span,a {
+  font-size: 12px;
+}
+
+.container {
+  text-align: center;
+}
+
+button {
+  border: solid 1px #ccc;
+  width: 590px;
+  height: 40px;
+  outline: none;
+  background: #ff984a;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+button:active {
+  color: #333;
+  text-shadow: 0px 1px 0px #eee;
+}
+
+h2 {
+  font-size: 40px;
+  color: #000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: lighter;
+}
+
+label {
+  font-size: 12px;
+  font-weight: normal;
+  text-align: left;
+  display: block;
+  margin-top: 10px;
+}
+
+input[type=text] {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #ddd;
+  padding: 2px 5px;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.panel {
+  width: 280px;
+  margin-right: 20px;
+  float: left;
+}

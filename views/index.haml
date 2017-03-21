@@ -1,0 +1,75 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{:charset => "utf-8"}
+    %meta{:author => "Herminio Vazquez"}
+    %meta{:keywords => "Force,Automation,Test Data"}
+    %meta{:Description => "Automatic person generator for testing purposes. Address and Sofinummer validated."}
+    %link{:rel => "stylesheet", :href => "style.css"}
+    %script{:src=>"d3.min.js"}
+    %script{:src=>"people.js"}
+    %title ING: Random Person Generator
+  %body
+    %h1 Random Person Generator
+    %hr
+    %p This web service generates random people with valid addresses used for the generation of test data. To generate a single record just press the button below [Generate one]
+    %p The following fields are included:
+    %div.column
+      %ul
+        %li Full name
+        %li Sofinummer
+        %li Initials
+        %li Sex
+    %div.column
+      %ul
+        %li Street
+        %li House Number
+        %li City
+        %li Regio
+    %div.column
+      %ul
+        %li Postcode
+        %li Phone
+        %li Email
+
+    %div.clear
+      %em#counter= "Available items: #{@people ? @people : 0}"
+
+    %div.container
+      %button{:onclick=>"get_person()"} Generate
+
+    %div
+      %h2#pname .
+    %div#txt
+      .panel
+        %label Sofinummer:
+        %input#sofinummer{:type => "text"}
+        %label Initials:
+        %input#initials{:type => "text"}
+        %label Sex:
+        %input#sex{:type => "text"}
+        %label Phone:
+        %input#phone{:type => "text"}
+        %label Email:
+        %input#email{:type => "text"}
+      .panel
+        %label Street:
+        %input#street{:type => "text"}
+        %label House number:
+        %input#house{:type => "text"}
+        %label City:
+        %input#city{:type => "text"}
+        %label Regio:
+        %input#regio{:type => "text"}
+        %label Postcode:
+        %input#postcode{:type => "text"}
+    %div#csv
+    %div#json
+    %div#xml
+
+    %div
+      %span TXT
+      %a{:href=>"#csv"}CSV
+      %a{:href=>"#json"}JSON
+      %a{:href=>"#xml"}XML
