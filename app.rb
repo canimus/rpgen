@@ -9,6 +9,7 @@
 # docker-machine create -d virtualbox redis-server
 # docker run -d --name redis-srv -p 6379:6369 redis
 # VBoxManage controlvm "redis-server" natpf1 "tcp-port6379,tcp,,6379,,6379";
+# VBoxManage controlvm "redis-server" natpf1 "tcp-port4567,tcp,,4567,,4567";
 
 require 'sinatra'
 require 'sinatra/json'
