@@ -20,7 +20,7 @@
 # docker exec -ti redis-srv bash
 # redis-cli
 # SADD people user:1
-# HMSET user:1 name "John Smith" sofinummer 10203040 initials "J.S" sex Male phone 666777999 email jsmith@test.com street "5th Avenue" house 110 city "New York" regio "New Jersey" postcode 5533TH
+# HMSET user:1 name "John Smith" sofinummer 10203040 initials "J.S" sex Male phone 666777999 email jsmith@test.com street "5th Avenue" house 110 city "New York" regio "New Jersey" postcode 55TH
 # =====================================================
 
 require 'sinatra'
