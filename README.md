@@ -52,5 +52,5 @@ docker run -it --rm --name randomperson --link redis-srv:redis-srv -p 4567:4567 
 The following commands are required to insert records
 ```redis
 LPUSH people user:1
-
+HMSET user:1 name "John Smith" sofinummer 10203040 initials "J.S" sex Male phone 666777999 email jsmith@test.com street "5th Avenue" house 110 city "New York" regio "New Jersey" postcode 55TH
 ```
